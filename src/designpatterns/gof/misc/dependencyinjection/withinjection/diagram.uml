@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.gof.misc.dependencyinjection.withinjection.SmsService</OriginalElement>
+  <nodes>
+    <node x="-90.01785714285711" y="-237.90476190476198">designpatterns.gof.misc.dependencyinjection.withinjection.MessageServiceInjector</node>
+    <node x="-62.39796626984128" y="3.6349206349206042">designpatterns.gof.misc.dependencyinjection.withinjection.MyApplicationTest</node>
+    <node x="42.89280753968259" y="-448.93650793650795">designpatterns.gof.misc.dependencyinjection.withinjection.EmailService</node>
+    <node x="148.2899305555556" y="-114.0">designpatterns.gof.misc.dependencyinjection.withinjection.EmailServiceInjector</node>
+    <node x="-47.39796626984128" y="168.92063492063482">designpatterns.gof.misc.dependencyinjection.withinjection.MyTest</node>
+    <node x="-283.0" y="-114.0">designpatterns.gof.misc.dependencyinjection.withinjection.SmsServiceInjector</node>
+    <node x="334.29365079365084" y="-448.93650793650795">designpatterns.gof.misc.dependencyinjection.withinjection.ServiceConsumer</node>
+    <node x="445.7619047619048" y="-308.0">designpatterns.gof.misc.dependencyinjection.withinjection.MyApplication</node>
+    <node x="-126.47619047619045" y="-560.047619047619">designpatterns.gof.misc.dependencyinjection.withinjection.MessageService</node>
+    <node x="-307.55555555555554" y="-448.93650793650795">designpatterns.gof.misc.dependencyinjection.withinjection.SmsService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.MyApplication" target="designpatterns.gof.misc.dependencyinjection.withinjection.ServiceConsumer" relationship="REALIZATION">
+      <point x="-120.18253968253964" y="-38.14285714285717" />
+      <point x="466.0793650793652" y="-351.03968253968253" />
+      <point x="466.4920634920635" y="-351.03968253968253" />
+      <point x="-8.301587301587347" y="29.587301587301567" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.EmailService" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageService" relationship="REALIZATION">
+      <point x="2.3809523753470785E-5" y="-38.9997619047619" />
+      <point x="170.39283134920635" y="-467.0" />
+      <point x="103.9523809523809" y="-467.0" />
+      <point x="102.92857142857136" y="32.22222222222217" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.EmailServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.EmailService" relationship="CREATE">
+      <point x="29.99991666666665" y="-39.0" />
+      <point x="118.89703968253966" y="39.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.EmailServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.MyApplication" relationship="CREATE">
+      <point x="62.51959325396814" y="-38.492063492063494" />
+      <point x="321.80952380952374" y="-182.28571428571428" />
+      <point x="469.95238095238096" y="-182.28571428571428" />
+      <point x="-116.30952380952385" y="42.22222222222223" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.MyApplicationTest" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageServiceInjector" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="35.60203373015872" y="-210.90476190476198" />
+      <point x="118.5" y="0.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.SmsService" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageService" relationship="REALIZATION">
+      <point x="0.0" y="-38.9997619047619" />
+      <point x="-180.05555555555554" y="-467.0" />
+      <point x="-81.95238095238102" y="-467.0" />
+      <point x="-82.97619047619057" y="35.1269841269841" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.MyApplication" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageService" relationship="TO_ONE">
+      <point x="45.3888888888888" y="-39.11111111111114" />
+      <point x="631.6507936507936" y="-543.5" />
+      <point x="127.5" y="-15.452380952380963" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.SmsServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.SmsService" relationship="CREATE">
+      <point x="-30.0" y="-39.0" />
+      <point x="-21.944444444444457" y="39.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.SmsServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.MyApplication" relationship="CREATE">
+      <point x="-79.39682539682545" y="39.93650793650795" />
+      <point x="-251.39682539682545" y="267.031746031746" />
+      <point x="629.7142857142857" y="267.031746031746" />
+      <point x="43.45238095238085" y="39.3174603174603" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.MyTest" target="designpatterns.gof.misc.dependencyinjection.withinjection.SmsServiceInjector" relationship="CREATE">
+      <point x="-83.66552579365083" y="-3.8253968253967514" />
+      <point x="-184.58730158730165" y="204.09523809523807" />
+      <point x="-12.587301587301653" y="38.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.SmsServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageServiceInjector" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="-172.0" y="-148.0" />
+      <point x="-58.71428571428578" y="-148.0" />
+      <point x="-87.19642857142867" y="29.634920634920718" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.MyTest" target="designpatterns.gof.misc.dependencyinjection.withinjection.EmailServiceInjector" relationship="CREATE">
+      <point x="83.84241071428568" y="0.04761904761915048" />
+      <point x="211.05411706349201" y="207.96825396825398" />
+      <point x="-48.235813492063585" y="41.8730158730159" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.withinjection.EmailServiceInjector" target="designpatterns.gof.misc.dependencyinjection.withinjection.MessageServiceInjector" relationship="REALIZATION">
+      <point x="-8.333333335031057E-5" y="-39.0" />
+      <point x="259.28984722222225" y="-148.0" />
+      <point x="113.63492063492055" y="-148.0" />
+      <point x="85.15277777777766" y="24.79365079365084" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0327868852459017" showDependencies="true" x="244.27777777777771" y="-141.5714285714286" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

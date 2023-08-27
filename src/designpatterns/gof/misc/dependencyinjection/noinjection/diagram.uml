@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.gof.misc.dependencyinjection.noinjection.EmailService</OriginalElement>
+  <nodes>
+    <node x="-747.8333333333333" y="-168.10328379176573">designpatterns.gof.misc.dependencyinjection.noinjection.EmailService</node>
+    <node x="-377.1666666666667" y="-353.7699504584325">designpatterns.gof.misc.dependencyinjection.noinjection.MyLegacyTest</node>
+    <node x="-757.3333333333333" y="-353.76995045843245">designpatterns.gof.misc.dependencyinjection.noinjection.MyApplication</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.gof.misc.dependencyinjection.noinjection.MyApplication" target="designpatterns.gof.misc.dependencyinjection.noinjection.EmailService" relationship="CREATE">
+      <point x="-15.0" y="39.0" />
+      <point x="0.0" y="-39.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.noinjection.MyApplication" target="designpatterns.gof.misc.dependencyinjection.noinjection.EmailService" relationship="TO_ONE">
+      <point x="0.0" y="39.0" />
+      <point x="15.0" y="-39.0" />
+    </edge>
+    <edge source="designpatterns.gof.misc.dependencyinjection.noinjection.MyLegacyTest" target="designpatterns.gof.misc.dependencyinjection.noinjection.MyApplication" relationship="CREATE">
+      <point x="-83.0" y="5.6843418860808015E-14" />
+      <point x="140.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="-668.6666666666667" y="-233.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
