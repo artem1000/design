@@ -1,0 +1,6 @@
+1. EagerInitialization - bad for memory
+2. LazyInitialization -- better for memory but watch out for thread safety. Also prone to reflection attacks. For serialization to work
+implement readResolve() method;
+3. BillPugh -- ok for memory and thread-safe, does not require synchronization. Prone to reflection attacks.
+5. EnumSingleton -- good for reflection attacks, thread-safe, but does not allow lazy initialization as instance is created
+at the time enum is loaded.
