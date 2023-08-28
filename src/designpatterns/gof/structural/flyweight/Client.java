@@ -1,5 +1,6 @@
 package designpatterns.gof.structural.flyweight;
 
+import java.util.concurrent.ThreadLocalRandom;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -44,7 +45,7 @@ public class Client extends JFrame {
     }
 
     private Color getRandomColor() {
-        return colors[RANDOM.nextInt(0, colors.length)];
+        return colors[ThreadLocalRandom.current().nextInt(0, colors.length)];
     }
 
     private int gerRandomHeight() {
@@ -64,7 +65,7 @@ public class Client extends JFrame {
     }
 
     private ShapeFactory.ShapeType getRandomShape(){
-        return shapes[RANDOM.nextInt(0, shapes.length)];
+        return shapes[ThreadLocalRandom.current().nextInt(0, shapes.length)];
     }
 
     public static void main(String[] args) {

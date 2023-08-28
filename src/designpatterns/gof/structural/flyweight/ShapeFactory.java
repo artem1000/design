@@ -14,10 +14,15 @@ public class ShapeFactory {
         Shape shape = shapes.get(type);   // first we go to our cache to see if we already have an object of that type created;
         // if so we reuse it, else we create it adding it to the cache
         if (shape == null) {
-            shape = switch (type) {
-                case OVAL_FILL -> new Oval(true);
-                case OVAL_NOFIILL -> new Oval(false);
-                default -> new Line();
+            switch (type) {
+                case OVAL_FILL:
+                    shape = new Oval(true);
+                    break;
+                case OVAL_NOFIILL:
+                    shape = new Oval(false);
+                break;
+            default:
+                    shape = new Line();
             };
             shapes.put(type, shape);  // saving it for future reuse
         }
